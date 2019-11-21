@@ -1,0 +1,16 @@
+<?php
+
+include (../connect.php);
+$_name=$GET['_name'];
+$_password=$GET['_password'];
+$_password1=$GET['password1'];
+$_date=$GET['date'];
+$_phone=$GET['_phone'];
+$_region=$GET['_region'];
+$_sex=$GET['_sex'];
+$_sex1=$GET['_sex1'];
+$sql="insert into _user (_name,_password,_password1,_date,_phone,_region,_sex,_sex1) values ('$_name','$_password','$_password1','$_date','$_phone','$_region','$_sex','$_sex1')";
+$Result = $conn->query($sql);
+
+
+?>
